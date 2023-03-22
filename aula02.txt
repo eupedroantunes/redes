@@ -1,0 +1,93 @@
+# Aula 02 Início dos Exercícios
+EXERCÍCIO 1:
+s = 500 MB * 8
+p = 10 Mbps
+
+t = 4000 / 10
+t = 400 segundos
+
+EXERCÍCIO 2:
+s = 2GB * 1000 = 2000 * 8 = 16000
+p = 25 Mbps
+
+t = 16000 / 25
+t = 640 segundos
+
+EXERCÍCIO 3:
+s = 5MB * 8 = 40
+p = 100Mbps
+
+t = 40 / 100
+t = 0,4 segundos
+
+EXERCÍCIO 4:
+s = 1MB * 1000 = 1000 * 8 = 8000
+p = 100Kbps
+
+t = 8000 / 100
+t = 80 segundos
+
+EXERCÍCIO 5:
+s = 1539MB * 3 = 4617MB * 8 = 39936
+p = 2,5Gbps * 1000 = 2500
+
+t = 39936 / 2500
+t = 15 segundos
+
+EXERCÍCIO 6:
+s = 300MB * 8 = 2400
+p = 5Mbps
+
+t = 2400 / 5
+t = 480 segundos
+
+EXERCÍCIO 7:
+s = 40MB * 1000 = 40000 * 8 = 320000
+p = 500Kbps
+
+t = 320000 / 500
+t = 640 segundos
+
+EXERCÍCIO 8:
+s = 7168KB * 8 = 57344
+p = 25Mbps * 1000 = 25000
+
+t = 57344 / 25000
+t = 2,29 segundos
+
+s = 7885KB * 8 = 63080
+p = 50Mbps * 1000 = 50000
+
+t = 63080 / 50000
+t = 1,26 segundos
+
+t = 2,29 + 1,26
+t = 3,55 segundos
+
+EXERCÍCIO 9:
+s = 511KB * 8 = 4088
+p = 50Kbps
+
+t = 4088 / 50
+t = 81,76 segundos
+
+EXERCÍCIO 10:
+s = 1GB * 1000 = 1000 * 8 = 8000
+p = 65Mbps
+
+t = 8000 / 65
+t = 123 segundos
+
+EXERCÍCIO 11:
+s = 5TB * 1000 = 5000 * 1000 = 5000000 * 8 = 40000000
+p = 600Kbps / 1000 = 0.6
+
+t = 40000000 / 0,6
+t = ?
+
+EXERCÍCIO 12:
+s = 7168MB * 8 = 57344
+p = 20Mbps
+
+t = 57344 / 20
+t = 47 minutos e 47 segundos
