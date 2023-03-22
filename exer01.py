@@ -16,7 +16,7 @@ uma rede local com uma vazão de 100 Mbps, podemos utilizar a seguinte
 fórmula: Tempo de transferência = (tamanho do arquivo em bits) / Throughput
 """
 print("Exercício 01")
-t = 500 / 100
+t = (500 * 8) / 100
 print(f'{t} segundos')
 
 """
