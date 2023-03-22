@@ -25,10 +25,7 @@ transferir um arquivo de 3.3 GB, quanto tempo demorou ?
 """
 print("Exercício 02")
 bw = 100_000 # in kbps
-sInGB = 3.3 # in GB
-sInMB = sInGB * 1000 # in MB
-sInKB = sInMB * 1000 # in KB
-s = sInKB * 8
+s = ((3.3 * 1000) * 1000) * 8 # GB -> MB -> KB -> Kbits
 
 t = s/bw
 print(f'{t} segundos') # = 264 segundos
@@ -41,13 +38,11 @@ essa transferência ?
 """
 
 print("Exercício 03")
-sInGB = 1
-sInMB = sInGB * 1000
-s = sInMB * 8
+s = (1 * 1000) * 8 # GB -> MB -> Mbits
 p = 10
 
 t = s/p
-print(f'{t} segundos')
+print(f'{t} segundos') # = 800 segundos
 
 """
 4) Caso você tenha uma conexão de Internet com velocidade de upload de 5
@@ -55,8 +50,21 @@ Mbps e, seja preciso enviar um vídeo de 500 MB (megabytes) para um
 amigo. Qual seria o tempo estimado para realizar essa transferência?
 """
 print("Exercício 04")
-sInMB = 500 * 8
+s = 500 * 8
 p = 5
 
 t = s/p
-print(f'{t} segundos')
+print(f'{t} segundos') # = 800 segundos
+
+"""
+5) Em uma LAN, é necessário transferir um arquivo comprimido de tamanho 250
+MB, do seu PC que possui a placa de rede com 1Gbit/s para outro notebook
+que fora testado o Throughput de 600 kbps, qual estimativa de tempo para
+isto ?
+"""
+print("Exercício 05")
+s = (250 * 1000) * 8 # MB -> KB -> Kbits
+p = 600
+
+t = s/p
+print(f'{t:6.2f} segundos') # = 3333.33 segundos
