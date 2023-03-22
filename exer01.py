@@ -17,7 +17,15 @@ fórmula: Tempo de transferência = (tamanho do arquivo em bits) / Throughput
 """
 print("Exercício 01")
 t = (500 * 8) / 100
-print(f'{t} segundos')
+# print(f'{t} segundos')
+
+if t > 60:
+    minutos = t % 60
+    segundos = t // 60
+    print(f'{t:.0f} segundos ou {minutos:.0f} min e {segundos:.0f} segundos')
+else:
+    print(f'{t:.0f} segundos')
+
 
 """
 2) Em um servidor local com Bandwidth de 100.000 kbps, foi necessário
@@ -28,7 +36,14 @@ bw = 100_000 # in kbps
 s = ((3.3 * 1000) * 1000) * 8 # GB -> MB -> KB -> Kbits
 
 t = s/bw
-print(f'{t} segundos') # = 264 segundos
+# print(f'{t} segundos') # = 264 segundos
+
+if t > 60:
+    minutos = t // 60
+    segundos = t % 60
+    print(f'{t:.0f} segundos ou {minutos:.0f} min e {segundos:.0f} segundos')
+else:
+    print(f'{t:.0f} segundos')
 
 """
 3) Suponha que você precise transferir um arquivo de 1 GB (gigabyte) pela
@@ -42,7 +57,13 @@ s = (1 * 1000) * 8 # GB -> MB -> Mbits
 p = 10
 
 t = s/p
-print(f'{t} segundos') # = 800 segundos
+
+if t > 60:
+    minutos = t // 60
+    segundos = t % 60
+    print(f'{t:.0f} segundos ou {minutos:.0f} min e {segundos:.0f} segundos')
+else:
+    print(f'{t:.0f} segundos')
 
 """
 4) Caso você tenha uma conexão de Internet com velocidade de upload de 5
@@ -54,7 +75,13 @@ s = 500 * 8
 p = 5
 
 t = s/p
-print(f'{t} segundos') # = 800 segundos
+
+if t > 60:
+    minutos = t // 60
+    segundos = t % 60
+    print(f'{t:.0f} segundos ou {minutos:.0f} min e {segundos:.0f} segundos')
+else:
+    print(f'{t:.0f} segundos')
 
 """
 5) Em uma LAN, é necessário transferir um arquivo comprimido de tamanho 250
@@ -67,4 +94,10 @@ s = (250 * 1000) * 8 # MB -> KB -> Kbits
 p = 600
 
 t = s/p
-print(f'{t:6.2f} segundos') # = 3333.33 segundos
+
+if t > 60:
+    minutos = t // 60
+    segundos = t % 60
+    print(f'{t:.0f} segundos ou {minutos:.0f} min e {segundos:.0f} segundos')
+else:
+    print(f'{t:.0f} segundos')
